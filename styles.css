@@ -16,6 +16,10 @@
 	text-decoration: none;
 }
 
+html {
+	scroll-behavior: smooth;
+}
+
 @font-face {
 	font-family: "Source Sans 3";
 	font-style: normal;
