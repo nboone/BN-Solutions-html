@@ -570,6 +570,11 @@ input[type="reset"]:hover {
 	.sidebar {
 		width: 100%;
 	}
+
+	.top-section {
+		min-height: 75vh;
+	}
+
 	.diensten {
 		grid-template-columns: 1fr;
 	}
@@ -611,6 +616,10 @@ input[type="reset"]:hover {
 @media (max-width: 370px) {
 	.links {
 		margin-left: 25px;
+	}
+
+	.top-section {
+		min-height: 65vh;
 	}
 
 	.intro-buttons {
