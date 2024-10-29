@@ -571,10 +571,6 @@ input[type="reset"]:hover {
 		width: 100%;
 	}
 
-	.top-section {
-		min-height: 75vh;
-	}
-
 	.diensten {
 		grid-template-columns: 1fr;
 	}
@@ -608,8 +604,9 @@ input[type="reset"]:hover {
 	}
 
 	.top-section {
+		min-height: 75vh;
 		padding-top: 50px;
-		padding-bottom: 0px;
+		padding-bottom: 10px;
 	}
 }
 
@@ -619,7 +616,7 @@ input[type="reset"]:hover {
 	}
 
 	.top-section {
-		min-height: 65vh;
+		min-height: 75vh;
 	}
 
 	.intro-buttons {
