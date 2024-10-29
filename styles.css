@@ -635,9 +635,9 @@ input[type="reset"]:hover {
 	}
 }
 
-@media (max-width: 370px) {
+@media (max-width: 400px) {
 	.links {
-		margin-left: 25px;
+		margin-left: 10px;
 	}
 
 	.top-section {
