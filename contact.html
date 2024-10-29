@@ -1,0 +1,136 @@
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>BN-Solutions - Jouw all-in-one tech partner</title>
+		<link rel="stylesheet" href="styles.css" />
+	</head>
+
+	<body>
+		<div class="header-wrapper" id="header-wrapper">
+			<div class="header">
+				<nav>
+					<ul class="sidebar">
+						<li onclick="hideSidebar()">
+							<a href="#">
+								<img src="img/close.svg" alt="close" width="25px" />
+							</a>
+						</li>
+						<li class="active"><a href="index.html">Home</a></li>
+						<li><a href="wie-zijn-we.html">Wie zijn we</a></li>
+						<li><a href="diensten.html">Diensten</a></li>
+						<li><a href="contact.html">Contact</a></li>
+					</ul>
+					<ul>
+						<li>
+							<a href="index.html"><img src="img/logo.png" alt="logo" /></a>
+						</li>
+						<li class="hideOnMobile active"><a href="index.html">Home</a></li>
+						<li class="hideOnMobile">
+							<a href="wie-zijn-we.html">Wie zijn we</a>
+						</li>
+						<li class="hideOnMobile"><a href="diensten.html">Diensten</a></li>
+						<li class="hideOnMobile"><a href="contact.html">Contact</a></li>
+						<li class="menu-button" onclick="showSidebar()">
+							<a href="#">
+								<img src="img/hamburger.svg" alt="hamburger" width="26px" />
+							</a>
+						</li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+
+		<!-- Einde van de header die voor alle pagina's hetzelfde is -->
+
+		<div class="contact-section-wrapper" id="contact-section-wrapper">
+			<div class="contactform">
+				<h2>Contacteer ons</h2>
+				<div class="formulier">
+					<form action="#">
+						<label for="naam">Naam + voornaam</label>
+						<input
+							type="text"
+							id="naam"
+							name="naam"
+							placeholder="Naam + voornaam"
+							autocomplete="off"
+							required />
+
+						<label for="mailadres">E-mailadres</label>
+						<input
+							type="email"
+							id="mailadres"
+							name="mailadres"
+							placeholder="E-mailadres"
+							autocomplete="off"
+							required />
+
+						<label for="bericht">Bericht</label>
+						<textarea
+							id="bericht"
+							name="bericht"
+							placeholder="Bericht"
+							autocomplete="off"
+							required></textarea>
+
+						<input type="submit" value="Verstuur" />
+					</form>
+				</div>
+			</div>
+		</div>
+
+		<!-- Start van de footer de voor alle pagina's hetzelfde is -->
+
+		<div class="footer-section-wrapper">
+			<div class="footer">
+				<div class="links">
+					<ul>
+						<li class="menu active"><a href="index.html">Home</a></li>
+						<li class="menu"><a href="wie-zijn-we.html">Wie zijn we</a></li>
+						<li class="menu"><a href="diensten.html">Diensten</a></li>
+						<li class="sub-menu"><a href="#">Computerproblemen</a></li>
+						<li class="sub-menu"><a href="#">Webdesign</a></li>
+						<li class="sub-menu">
+							<a href="#">Live sound & geluidsopnames</a>
+						</li>
+						<li class="sub-menu"><a href="#">Consultancy</a></li>
+						<li class="sub-menu">
+							<a href="#">Administratieve ondersteuning</a>
+						</li>
+						<li class="sub-menu"><a href="#">Opleidingen</a></li>
+						<li class="menu"><a href="contact.html">Contact</a></li>
+					</ul>
+				</div>
+
+				<div class="adres">
+					<img src="img/map.svg" alt="map" />
+					<p>BN-Solutions<br />Kleine Slijpstraat 10<br />8650 Houthulst</p>
+					<img src="img/telephone.svg" alt="telephone" />
+					<p><a href="tel:+32477250221">+32 (0)477 25 02 21</a></p>
+					<img src="img/envelope.svg" alt="envelope" />
+					<p><a href="mailto:info@bn-solutions.be">info@bn-solutions.be</a></p>
+					<p>Ond. Nr.</p>
+					<p>BE0883.850.736.</p>
+				</div>
+			</div>
+		</div>
+
+		<div class="copyright-wrapper">
+			<div class="copyright">
+				<p>Copyright &copy;2024 - BN-Solutions</p>
+			</div>
+		</div>
+
+		<script>
+			function showSidebar() {
+				const sidebar = document.querySelector(".sidebar");
+				sidebar.style.display = "flex";
+			}
+			function hideSidebar() {
+				const sidebar = document.querySelector(".sidebar");
+				sidebar.style.display = "none";
+			}
+		</script>
+	</body>
+</html>
