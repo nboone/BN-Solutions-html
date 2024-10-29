@@ -458,6 +458,20 @@ input[type="reset"]:hover {
 	color: var(--donkergrijs);
 }
 
+.wie-zijn-we-text a {
+	height: 100%;
+	text-decoration: none;
+	color: var(--donkergrijs);
+	transition: all 0.25s;
+	text-transform: uppercase;
+	font-weight: 700;
+	transition: all 0.2s ease-in-out;
+}
+
+.wie-zijn-we-text a:hover {
+	color: var(--zwart);
+}
+
 .dienst {
 	padding: 16px 25px;
 	/*border: 1px solid rgba(255, 255, 255, .24);*/
