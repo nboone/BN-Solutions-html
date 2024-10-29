@@ -440,7 +440,7 @@ input[type="reset"]:hover {
 	padding-bottom: 50px;
 }
 
-.dienst-text,
+.diensten-text,
 .wie-zijn-we-text {
 	padding-top: 50px;
 	max-width: 1066px;
@@ -449,7 +449,7 @@ input[type="reset"]:hover {
 	/*border: 1px solid;*/
 }
 
-.dienst-text h2,
+.diensten-text h2,
 .wie-zijn-we-text h2 {
 	font-size: 1.5rem;
 	text-transform: uppercase;
@@ -575,7 +575,8 @@ input[type="reset"]:hover {
 		grid-template-columns: 1fr 1fr;
 	}
 
-	.diensten-wrapper {
+	.diensten-wrapper,
+	.wie-zijn-we-wrapper {
 		padding-left: 30px;
 		padding-right: 30px;
 	}
