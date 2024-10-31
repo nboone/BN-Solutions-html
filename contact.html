@@ -16,7 +16,7 @@
 								<img src="img/close.svg" alt="close" width="25px" />
 							</a>
 						</li>
-						<li><a href="/">Home</a></li>
+						<li><a href="index.html">Home</a></li>
 						<li><a href="wie-zijn-we.html">Wie zijn we</a></li>
 						<li><a href="diensten.html">Diensten</a></li>
 						<li><a href="contact.html">Contact</a></li>
@@ -25,7 +25,7 @@
 						<li>
 							<a href="index.html"><img src="img/logo.png" alt="logo" /></a>
 						</li>
-						<li class="hideOnMobile"><a href="/">Home</a></li>
+						<li class="hideOnMobile"><a href="index.html">Home</a></li>
 						<li class="hideOnMobile">
 							<a href="wie-zijn-we.html">Wie zijn we</a>
 						</li>
@@ -54,30 +54,13 @@
 				<div class="formulier">
 					<form action="#">
 						<label for="naam">Naam + voornaam</label>
-						<input
-							type="text"
-							id="naam"
-							name="naam"
-							placeholder="Naam + voornaam"
-							autocomplete="off"
-							required />
+						<input type="text" id="naam" name="naam" placeholder="Naam + voornaam" autocomplete="off" required />
 
 						<label for="mailadres">E-mailadres</label>
-						<input
-							type="email"
-							id="mailadres"
-							name="mailadres"
-							placeholder="E-mailadres"
-							autocomplete="off"
-							required />
+						<input type="email" id="mailadres" name="mailadres" placeholder="E-mailadres" autocomplete="off" required />
 
 						<label for="bericht">Bericht</label>
-						<textarea
-							id="bericht"
-							name="bericht"
-							placeholder="Bericht"
-							autocomplete="off"
-							required></textarea>
+						<textarea id="bericht" name="bericht" placeholder="Bericht" autocomplete="off" required></textarea>
 
 						<input type="submit" value="Verstuur" />
 					</form>
@@ -91,7 +74,7 @@
 			<div class="footer">
 				<div class="links">
 					<ul>
-						<li class="menu"><a href="/">Home</a></li>
+						<li class="menu"><a href="index.html">Home</a></li>
 						<li class="menu"><a href="wie-zijn-we.html">Wie zijn we</a></li>
 						<li class="menu"><a href="diensten.html">Diensten</a></li>
 						<li class="sub-menu"><a href="#">Computerproblemen</a></li>
@@ -137,7 +120,8 @@
 				sidebar.style.display = "none";
 			}
 			for (var i = 0; i < document.links.length; i++) {
-				if (document.links[i].href == document.URL) {
+				var webadres = document.URL + "index.html";
+				if (document.links[i].href == document.URL || document.links[i].href == webadres) {
 					document.links[i].parentElement.className += " active";
 				}
 			}
